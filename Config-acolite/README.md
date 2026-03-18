@@ -43,7 +43,7 @@ dsf_residual_glint_correction=True
 ```
 
 Metodo DSF (Dark Spectrum Fitting) tiled: estima AOT por teselas, mas robusto
-para escenas con mezcla tierra-agua como los embalses del Canal.
+para escenas con mezcla tierra-agua.
 
 ### Mascara de agua
 
