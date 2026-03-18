@@ -1,0 +1,48 @@
+## Rutas de Archivos
+inputfile=D:\Canal\lista_388_imagenes.txt
+output=D:\Canal\Procesado
+
+## FIX CRÍTICO: Configuración de Sensor y Tiempo
+sensor=S2
+# Estas 3 líneas obligan a ACOLITE a procesar aunque la hora de los metadatos difiera
+s2_include_all_granules=True
+s2_time_difference_check=False
+s2_granule_time_difference_check=False
+
+## Configuración de Salida y Resolución
+s2_target_res=20
+polygon=None
+l2w_parameters=Rrs_*,chl_oc3,chl_re_gons,spm_nechad2016,tur_nechad2016,fai
+
+## Visualización y Mapas
+rgb_rhot=False
+rgb_rhos=True
+map_l2w=False
+
+## Algoritmo Atmosférico (DSF)
+dsf_aot_estimate=tiled
+dsf_residual_glint_correction=True
+atmospheric_correction=True
+atmospheric_correction_method=dark_spectrum
+
+## Gestión de Archivos y Memoria
+new_path=None
+ancillary_data=True
+l2w_data_in_memory=True
+l2w_mask_smooth=False
+l2w_mask_water_parameters=True
+l2w_mask_threshold=0.055
+l2w_mask_negative_rhow=False
+
+## Limpieza Automática (Vital para no llenar el disco)
+delete_extracted_input=True
+l1r_delete_netcdf=True
+l2r_delete_netcdf=True
+delete_acolite_run_text_files=True
+
+## Configuración de Tesis Canal de Panamá
+# Formato S,W,N,E (Coordenadas ajustadas para el Canal)
+limit=8.8971,-80.1127,9.4322,-79.4597
+merge_tiles=True
+merge_full_tiles=True
+tact_run=False
