@@ -76,7 +76,7 @@ limit=8.8971,-80.1127,9.4322,-79.4597
 ```
 
 Formato: Sur, Oeste, Norte, Este. Cubre Lago Gatun, Lago Alhajuela y Embalse
-Miraflores con un buffer de ~5 km.
+Miraflores con un buffer de ~5 km. Debe modificarse.
 
 ---
 
